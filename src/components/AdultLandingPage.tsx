@@ -18,7 +18,6 @@ import {
   Lightbulb,
   Puzzle,
   Star,
-  XCircle,
 } from "lucide-react";
 import { CheckUpSection } from "@/components/CheckUpSection";
 import { CheckUpShowcaseSection } from "@/components/CheckUpShowcaseSection";
@@ -511,97 +510,56 @@ function ScopeAndFaqSection() {
   return (
     <section ref={sectionRef} id="faq" className="section-surface scroll-mt-28 py-[72px] md:py-[112px]">
       <div className="inner">
-        <motion.div
-          className="max-w-[760px]"
-          initial={reduceMotion ? false : { opacity: 0, y: 12 }}
-          animate={sectionActive ? { opacity: 1, y: 0 } : undefined}
-          transition={{ duration: 0.4, ease: easeOutExpo }}
-        >
-          <div className="badge border-[#6BC862] text-[#164C35]">Hizmet kapsamı</div>
-          <h2 className="section-title mt-7">Neler sunduğumuz ve sunmadığımız konusunda şeffafız.</h2>
-        </motion.div>
-
-        <div className="mt-10 grid gap-5 lg:grid-cols-2">
-          <AdultScopePanel
-            from="left"
-            className="rounded-[28px] bg-[#F0F7F2] p-6 md:p-8"
+        <div className="mx-auto max-w-[640px] text-center">
+          <motion.div
+            initial={reduceMotion ? false : { opacity: 0, y: 12 }}
+            animate={sectionActive ? { opacity: 1, y: 0 } : undefined}
+            transition={{ duration: 0.4, ease: easeOutExpo }}
           >
-            {(panelActive) => (
-              <>
-                <h3 className="compact-title text-[#164C35]">Ne yapıyoruz?</h3>
-                <ul className="mt-6 grid gap-3">
-                  {["Bilişsel Değerlendirme", "Bilişsel Yeterlilik Analizi", "Kişiye Özel Gelişim Planı", "Düzenli Gelişim Takibi"].map((item, index) => (
-                    <motion.li
-                      key={item}
-                      className="flex items-center gap-3 rounded-[18px] bg-white p-4 text-[15px] font-extrabold text-[#241D18]"
-                      initial={reduceMotion ? false : { opacity: 0, y: 10 }}
-                      animate={panelActive ? { opacity: 1, y: 0 } : undefined}
-                      transition={{
-                        delay: 0.15 + index * 0.06,
-                        duration: 0.35,
-                        ease: easeOutExpo,
-                      }}
-                    >
-                      <motion.span
-                        className="shrink-0"
-                        initial={reduceMotion ? false : { scale: 0.9 }}
-                        animate={panelActive ? { scale: [0.9, 1.05, 1] } : undefined}
+            <div className="badge border-[#6BC862] text-[#164C35]">Hizmet kapsamı</div>
+            <h2 className="section-title mt-7">Neler sunduğumuz konusunda şeffafız.</h2>
+          </motion.div>
+
+          <div className="mt-10">
+            <AdultScopePanel
+              from="left"
+              className="rounded-[28px] bg-[#F0F7F2] p-6 md:p-8"
+            >
+              {(panelActive) => (
+                <>
+                  <ul className="grid gap-3">
+                    {["Bilişsel Değerlendirme", "Bilişsel Yeterlilik Analizi", "Kişiye Özel Gelişim Planı", "Düzenli Gelişim Takibi"].map((item, index) => (
+                      <motion.li
+                        key={item}
+                        className="flex items-center gap-3 rounded-[18px] bg-white p-4 text-[15px] font-extrabold text-[#241D18]"
+                        initial={reduceMotion ? false : { opacity: 0, y: 10 }}
+                        animate={panelActive ? { opacity: 1, y: 0 } : undefined}
                         transition={{
-                          delay: 0.28 + index * 0.06,
-                          duration: 0.28,
-                          ease: "easeOut",
+                          delay: 0.15 + index * 0.06,
+                          duration: 0.35,
+                          ease: easeOutExpo,
                         }}
                       >
-                        <CheckCircle2 className="text-[#6BC862]" size={19} aria-hidden="true" />
-                      </motion.span>
-                      {item}
-                    </motion.li>
-                  ))}
-                </ul>
-              </>
-            )}
-          </AdultScopePanel>
-
-          <AdultScopePanel
-            from="right"
-            delay={0.12}
-            className="rounded-[28px] bg-[#FEF9F5] p-6 md:p-8"
-          >
-            {(panelActive) => (
-              <>
-                <h3 className="compact-title text-[#8C5038]">Ne yapmıyoruz?</h3>
-                <ul className="mt-6 grid gap-3">
-                  {["Tıbbi tanı koymuyoruz", "İlaç önermiyor veya mevcut tedavinin yerine geçmiyoruz"].map((item, index) => (
-                    <motion.li
-                      key={item}
-                      className="flex items-start gap-3 rounded-[18px] bg-white p-4 text-[15px] font-extrabold leading-6 text-[#241D18]"
-                      initial={reduceMotion ? false : { opacity: 0, y: 10 }}
-                      animate={panelActive ? { opacity: 1, y: 0 } : undefined}
-                      transition={{
-                        delay: 0.15 + index * 0.06,
-                        duration: 0.35,
-                        ease: easeOutExpo,
-                      }}
-                    >
-                      <motion.span
-                        className="mt-0.5 shrink-0"
-                        initial={reduceMotion ? false : { scale: 0.9 }}
-                        animate={panelActive ? { scale: [0.9, 1.05, 1] } : undefined}
-                        transition={{
-                          delay: 0.28 + index * 0.06,
-                          duration: 0.28,
-                          ease: "easeOut",
-                        }}
-                      >
-                        <XCircle className="text-[#F5927E]" size={19} aria-hidden="true" />
-                      </motion.span>
-                      {item}
-                    </motion.li>
-                  ))}
-                </ul>
-              </>
-            )}
-          </AdultScopePanel>
+                        <motion.span
+                          className="shrink-0"
+                          initial={reduceMotion ? false : { scale: 0.9 }}
+                          animate={panelActive ? { scale: [0.9, 1.05, 1] } : undefined}
+                          transition={{
+                            delay: 0.28 + index * 0.06,
+                            duration: 0.28,
+                            ease: "easeOut",
+                          }}
+                        >
+                          <CheckCircle2 className="text-[#6BC862]" size={19} aria-hidden="true" />
+                        </motion.span>
+                        {item}
+                      </motion.li>
+                    ))}
+                  </ul>
+                </>
+              )}
+            </AdultScopePanel>
+          </div>
         </div>
 
         <div ref={faqRef} className="mt-10 grid gap-7 lg:grid-cols-[0.7fr_1.3fr]">

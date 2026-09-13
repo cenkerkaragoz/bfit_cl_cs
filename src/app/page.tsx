@@ -21,10 +21,10 @@ export const metadata: Metadata = {
   // `absolute` keeps this exact string and ignores the root layout's
   // `title.template`, since this copy already contains the brand suffix.
   title: {
-    absolute: "BrainFit Karşıyaka | Çocuklar İçin Zihin Check-Up",
+    absolute: "BrainFit Karşıyaka | Çocuklar İçin CogMap Bilimsel Değerlendirmesi",
   },
   description:
-    "BrainFit Karşıyaka'da 1 saatlik Zihin Check-Up ile çocuğunuzun bilişsel profilini anlayın ve kişiye özel egzersiz planı hakkında bilgi alın.",
+    "BrainFit Karşıyaka'da 1 saatlik CogMap bilimsel değerlendirmesi ile çocuğunuzun bilişsel profilini anlayın ve kişiye özel egzersiz planı hakkında bilgi alın.",
   alternates: {
     canonical: "/",
   },
@@ -32,10 +32,10 @@ export const metadata: Metadata = {
 
 const homeJsonLd = buildJsonLdGraph([
   buildServiceNode({
-    name: "Zihin Check-Up",
+    name: "CogMap",
     serviceType: "Bilişsel değerlendirme",
     description:
-      "BrainFit Karşıyaka'da 1 saatlik Zihin Check-Up ile çocuğunuzun bilişsel profilini anlayın ve kişiye özel egzersiz planı hakkında bilgi alın.",
+      "BrainFit Karşıyaka'da 1 saatlik CogMap bilimsel değerlendirmesi ile çocuğunuzun bilişsel profilini anlayın ve kişiye özel egzersiz planı hakkında bilgi alın.",
     audienceType: "Çocuklar ve ebeveynler",
   }),
   buildFaqPageNode(childFaqs),

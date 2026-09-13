@@ -14,7 +14,7 @@ import Link from "next/link";
 const childNavItems = [
   { label: "Yaşadıklarınız", href: "#help" },
   { label: "Deneyimler", href: "#experiences" },
-  { label: "Zihin Check-Up", href: "#checkup" },
+  { label: "Değerlendirme", href: "#checkup" },
   { label: "Bilişsel Profil", href: "#cognitive-profile" },
   { label: "İletişim", href: "#contact" },
 ];

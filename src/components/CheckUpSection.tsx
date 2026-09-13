@@ -33,7 +33,7 @@ const processSteps = [
   {
     title: "Bilimsel Değerlendirme",
     children:
-      "Çocuğunuzun bilişsel becerilerine 1 saatlik Zihin Check-Up ile bakıyoruz.",
+      "Çocuğunuzun bilişsel becerilerine 1 saatlik CogMap bilimsel değerlendirmesi ile bakıyoruz.",
     adults:
       "Farklı bilişsel becerilerinize kapsamlı bir değerlendirmeyle bakıyoruz.",
     icon: ClipboardCheck,

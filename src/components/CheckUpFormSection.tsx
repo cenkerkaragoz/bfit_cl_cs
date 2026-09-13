@@ -57,7 +57,7 @@ export function CheckUpFormSection() {
               Önce yaşadığınız durumu konuşalım.
             </h2>
             <p className="mt-6 max-w-[560px] text-[16px] font-semibold leading-8 text-[#160A08]/76">
-              WhatsApp&apos;tan yazabilir ya da numaranızı bırakabilirsiniz. Ekibimiz sizi dinler, Zihin Check-Up hakkında bilgi verir ve sorularınızı yanıtlar.
+              WhatsApp&apos;tan yazabilir ya da numaranızı bırakabilirsiniz. Ekibimiz sizi dinler, CogMap hakkında bilgi verir ve sorularınızı yanıtlar.
             </p>
 
             <ContactActions audience="children" className="mt-7 max-w-[560px]" showCallbackLink={false} />

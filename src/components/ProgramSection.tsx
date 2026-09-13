@@ -94,7 +94,7 @@ export function ProgramSection() {
                     href="#checkup-form"
                     className="arrow-shift -ml-4 mt-7 inline-flex items-center gap-2 rounded-full px-4 py-2 text-[14px] font-extrabold text-[#1E99B5] transition-[background,padding-right] duration-200 hover:bg-[rgba(30,153,181,0.09)] hover:pr-5"
                   >
-                    Zihin Check-Up Randevusu Alın
+                    CogMap Randevusu Alın
                     <ArrowUpRight size={17} />
                   </a>
                 </div>

@@ -177,14 +177,14 @@ export default async function BlogDetailPage({
                   Çocuğunuz için
                 </p>
                 <p className="body-copy mt-3 text-[15px]">
-                  Merak ettiğiniz konuları netleştirmek isterseniz, Zihin
-                  Check-Up size sakin bir başlangıç noktası sunar.
+                  Merak ettiğiniz konuları netleştirmek isterseniz, CogMap
+                  bilimsel değerlendirmesi size sakin bir başlangıç noktası sunar.
                 </p>
                 <Link
                   href="/"
                   className="mt-4 inline-flex items-center gap-2 font-extrabold"
                 >
-                  Zihin Check-Up&apos;ı inceleyin
+                  CogMap&apos;ı inceleyin
                   <ArrowUpRight size={16} />
                 </Link>
               </div>

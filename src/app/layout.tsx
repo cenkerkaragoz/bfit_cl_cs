@@ -25,11 +25,11 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.origin),
   title: {
-    default: "BrainFit Karşıyaka | Çocuklar İçin Zihin Check-Up",
+    default: "BrainFit Karşıyaka | Çocuklar İçin CogMap Bilimsel Değerlendirmesi",
     template: `%s | ${SITE.brandName}`,
   },
   description:
-    "BrainFit Karşıyaka'da 1 saatlik Zihin Check-Up ile çocuğunuzun bilişsel profilini anlayın ve kişiye özel egzersiz planı hakkında bilgi alın.",
+    "BrainFit Karşıyaka'da 1 saatlik CogMap bilimsel değerlendirmesi ile çocuğunuzun bilişsel profilini anlayın ve kişiye özel egzersiz planı hakkında bilgi alın.",
   alternates: {
     canonical: "/",
   },

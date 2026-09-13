@@ -6,7 +6,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: SITE.brandName,
     short_name: "BrainFit",
     description:
-      "BrainFit Karşıyaka'da çocuklar ve yetişkinler için Zihin Check-Up ve bilişsel gelişim programları.",
+      "BrainFit Karşıyaka'da çocuklar ve yetişkinler için CogMap bilimsel değerlendirmesi ve bilişsel gelişim programları.",
     lang: SITE.language,
     start_url: "/",
     display: "standalone",

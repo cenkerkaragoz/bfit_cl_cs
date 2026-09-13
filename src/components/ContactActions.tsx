@@ -3,7 +3,7 @@ import { ArrowUpRight, MessageCircle } from "lucide-react";
 type Audience = "children" | "adults";
 
 const messages: Record<Audience, string> = {
-  children: "Merhaba, çocuğum için Zihin Check-Up hakkında bilgi almak istiyorum.",
+  children: "Merhaba, çocuğum için CogMap hakkında bilgi almak istiyorum.",
   adults: "Merhaba, yetişkin bilişsel profil değerlendirmesi hakkında bilgi almak istiyorum.",
 };
 

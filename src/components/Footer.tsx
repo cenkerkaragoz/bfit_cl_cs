@@ -22,7 +22,7 @@ export function Footer({ animated = false }: { animated?: boolean }) {
         Sorunuz varsa önce konuşalım.
       </h2>
       <p className="mt-5 max-w-[560px] text-[15px] font-semibold leading-7 text-white/68">
-        Çocuklar ve yetişkinler için Zihin Check-Up süreci hakkında bilgi almak üzere iletişim bölümündeki iki seçenekten birini kullanabilirsiniz.
+        Çocuklar ve yetişkinler için CogMap süreci hakkında bilgi almak üzere iletişim bölümündeki iki seçenekten birini kullanabilirsiniz.
       </p>
     </>
   );
@@ -36,7 +36,7 @@ export function Footer({ animated = false }: { animated?: boolean }) {
       <nav className="mt-7 grid grid-cols-2 gap-3 text-[14px] font-extrabold" aria-label="Alt bilgi bağlantıları">
         <Link className="rounded-full border border-white/14 px-4 py-3 text-center transition hover:bg-white/8" href="/">Çocuklar</Link>
         <Link className="rounded-full border border-white/14 px-4 py-3 text-center transition hover:bg-white/8" href="/yetiskinler">Yetişkinler</Link>
-        <a className="rounded-full border border-white/14 px-4 py-3 text-center transition hover:bg-white/8" href="#checkup">Zihin Check-Up</a>
+        <a className="rounded-full border border-white/14 px-4 py-3 text-center transition hover:bg-white/8" href="#checkup">CogMap</a>
         <a className="rounded-full border border-white/14 px-4 py-3 text-center transition hover:bg-white/8" href="#cognitive-profile">Bilişsel Profil</a>
       </nav>
       {telHref ? (

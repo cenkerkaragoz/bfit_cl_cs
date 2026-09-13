@@ -5,7 +5,7 @@ const catalog = {
   service: {
     name: SITE.brandName,
     description:
-      "BrainFit Karşıyaka'nın çocuklar ve yetişkinler için Zihin Check-Up ve bilişsel gelişim hizmetleri.",
+      "BrainFit Karşıyaka'nın çocuklar ve yetişkinler için CogMap bilimsel değerlendirmesi ve bilişsel gelişim hizmetleri.",
     homepage: absoluteUrl("/"),
   },
   resources: [

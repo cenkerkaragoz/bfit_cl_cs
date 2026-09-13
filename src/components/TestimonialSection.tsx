@@ -36,7 +36,7 @@ const testimonialGroups = {
       tail: ".",
     },
     {
-      lead: "Check-Up sonrasında hangi alanlara odaklanmamız gerektiği bizim için ",
+      lead: "CogMap sonrasında hangi alanlara odaklanmamız gerektiği bizim için ",
       highlight: "netleşti",
       tail: ".",
     },

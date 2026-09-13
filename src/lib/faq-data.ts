@@ -21,9 +21,9 @@ export interface FaqEntry {
 export const childFaqs = [
   {
     id: "medical",
-    question: "Zihin Check-Up tıbbi bir test mi?",
+    question: "CogMap nasıl bir değerlendirme?",
     answer:
-      "Hayır. Tıbbi tanı ya da tedavi amacı taşımaz; çocuğunuzun bilişsel becerilerini anlamaya yardımcı bir değerlendirmedir.",
+      "Çocuğunuzun bilişsel becerilerini anlamanıza yardımcı, bilimsel yöntemlere dayanan bir değerlendirmedir.",
   },
   {
     id: "result",
@@ -35,7 +35,7 @@ export const childFaqs = [
     id: "without-problem",
     question: "Belirgin bir sorun yoksa başvurabilir miyiz?",
     answer:
-      "Evet. Zihin Check-Up yalnızca zorlanma yaşayan çocuklar için değil, çocuğunu daha yakından tanımak isteyen tüm aileler için uygundur.",
+      "Evet. CogMap yalnızca zorlanma yaşayan çocuklar için değil, çocuğunu daha yakından tanımak isteyen tüm aileler için uygundur.",
   },
   {
     id: "contact",
@@ -48,9 +48,9 @@ export const childFaqs = [
 export const adultFaqs = [
   {
     id: "medical",
-    question: "Bu bir sağlık hizmeti mi?",
+    question: "CogMap nasıl bir değerlendirme?",
     answer:
-      "Hayır. BrainFit bir sağlık kuruluşu değildir. Bilişsel becerilerinizin bugünkü durumunu anlamanıza yardımcı olan bir değerlendirmedir.",
+      "Bilişsel becerilerinizin bugünkü durumunu anlamanıza yardımcı, bilimsel yöntemlere dayanan bir değerlendirmedir.",
   },
   {
     id: "result",

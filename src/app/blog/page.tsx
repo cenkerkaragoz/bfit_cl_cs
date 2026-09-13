@@ -17,7 +17,7 @@ export const revalidate = 300;
 
 const title = "BrainFit Günlüğü";
 const description =
-  "Bilişsel gelişim, Zihin Check-Up ve günlük yaşama yönelik BrainFit Karşıyaka yazıları.";
+  "Bilişsel gelişim, CogMap ve günlük yaşama yönelik BrainFit Karşıyaka yazıları.";
 
 export const metadata: Metadata = {
   title,

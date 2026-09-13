@@ -61,8 +61,8 @@ export async function POST(request: Request) {
 
   const text = [
     audience === "adults"
-      ? "Yeni Yetişkin Zihin Check-Up Başvurusu"
-      : "Yeni Zihin Check-Up Başvurusu",
+      ? "Yeni Yetişkin CogMap Başvurusu"
+      : "Yeni CogMap Başvurusu",
     "",
     `Adı Soyadı: ${parentName}`,
     `Telefon: ${phone}`,
