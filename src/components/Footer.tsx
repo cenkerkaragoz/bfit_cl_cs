@@ -68,6 +68,11 @@ export function Footer({ animated = false }: { animated?: boolean }) {
 
         <div className="mt-12 flex flex-col justify-between gap-4 border-t border-white/12 pt-7 text-[12px] font-semibold text-white/48 sm:flex-row sm:items-center">
           <p>Tüm Hakları Saklıdır © 2026 BrainFit.</p>
+          <nav className="flex flex-wrap gap-x-5 gap-y-2" aria-label="Yasal bağlantılar">
+            <Link className="transition hover:text-white/76" href="/cerez-politikasi">
+              Çerez Politikası
+            </Link>
+          </nav>
         </div>
       </div>
     </footer>
