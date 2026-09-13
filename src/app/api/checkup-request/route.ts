@@ -1,4 +1,5 @@
 import { Resend } from "resend";
+import { buildCheckupEmailHtml, buildCheckupEmailText } from "@/lib/email/checkup-email";
 
 type CheckUpPayload = {
   audience?: unknown;
@@ -59,17 +60,9 @@ export async function POST(request: Request) {
     timeZone: "Europe/Istanbul",
   }).format(new Date());
 
-  const text = [
-    audience === "adults"
-      ? "Yeni Yetişkin CogMap Başvurusu"
-      : "Yeni CogMap Başvurusu",
-    "",
-    `Adı Soyadı: ${parentName}`,
-    `Telefon: ${phone}`,
-    `${audience === "adults" ? "Katılımcı Yaşı" : "Çocuğun Yaşı"}: ${participantAge}`,
-    `${audience === "adults" ? "Katılımcı Notu" : "Veli Notu"}: ${note}`,
-    `Başvuru Tarihi: ${timestamp}`,
-  ].join("\n");
+  const emailData = { audience, parentName, phone, participantAge, note, timestamp };
+  const text = buildCheckupEmailText(emailData);
+  const html = buildCheckupEmailHtml(emailData);
 
   try {
     await resend.emails.send({
@@ -80,6 +73,7 @@ export async function POST(request: Request) {
           ? "BrainFit Karşıyaka - Yeni Yetişkin Başvuru Bildirimi"
           : "BrainFit Karşıyaka - Yeni Başvuru Bildirimi",
       text,
+      html,
     });
   } catch {
     return Response.json(
